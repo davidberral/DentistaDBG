@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cita Dentista</h1>
+    <form action="citarDentista" method="post">
+        <div>
+            <label for="diacita">Dia de la cita</label>
+            <input type="date" name="diacita" id="diacita">
+        </div>
+
+        <div>
+            <label for="horacita">Hora de la cita</label>
+            <input type="time" name="horacita" id="horacita">
+        </div>
+
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+
+        <div>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos">
+        </div>
+
+        <div>
+            <label for="centro">Centro</label> 
+            <select name="centro" id="centro">
+            <option value="1">Centro dental Colon</option>
+            <option value="2">Centro protesis dental Guerrita</option>
+            <option value="3">Centro estomatologia Fidiana</option>
+            <option value="4">Centro implantologia Sector Sur</option>
+        </select>
+        </div>
+
+        <div>
+            <label for="">Tipo:</label>
+            <input type="radio" name="tipo" id="nuevacita" value="nuevacita">
+            <label for="nuevacita">Nueva cita</label>
+            <input type="radio" name="tipo" id="revision" value="revision">
+            <label for="revision">Revision</label>
+        </div>
+        <div>
+            <input type="submit" value="Confirmar">
+        </div>
+    </form>
+    
+</body>
+</html>
